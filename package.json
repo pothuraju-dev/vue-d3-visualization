@@ -1,0 +1,49 @@
+{
+  "name": "vue-d3-visualization",
+  "version": "1.0.0",
+  "description": "D3 visualization module",
+  "main": "dist/index.js",
+  "keywords": [
+    "d3",
+    "d3-module",
+    "visualization",
+    "vue",
+    "vuejs",
+    "web"
+  ],
+  "scripts": {
+    "build:client": "webpack --config ./build/webpack.user.config.js --progress --hide-modules",
+    "build": "npm run build:client && npm run build:client-no-css && npm run build:ssr && npm run build:ssr-no-css",
+    "watch": "webpack --config ./build/webpack.user.config.js --progress --hide-modules --watch"
+  },
+  "author": {
+    "name": "Pothuraju <sriramkumar.pothuraju@gmail.com>",
+    "url": "https://github.com/pothuraju-dev"
+  },
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pothuraju-dev/vue-d3-visualization.git"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.2.0",
+    "@babel/plugin-proposal-optional-chaining": "^7.10.3",
+    "@babel/preset-env": "^7.2.0",
+    "@vue/eslint-config-prettier": "^6.0.0",
+    "@vue/test-utils": "1.0.0-beta.31",
+    "babel-loader": "^8.0.4",
+    "css-loader": "^1.0.1",
+    "file-loader": "^0.9.0",
+    "mini-css-extract-plugin": "^0.4.5",
+    "optimize-css-assets-webpack-plugin": "^5.0.1",
+    "sass-loader": "^7.1.0",
+    "ts-loader": "^6.2.2",
+    "uglifyjs-webpack-plugin": "^2.2.0",
+    "vue": "2.6.11",
+    "vue-loader": "^15.0.0",
+    "vue-style-loader": "^4.1.2",
+    "webpack": "^4.42.1",
+    "webpack-cli": "^3.3.12",
+    "webpack-merge": "^4.2.2"
+  }
+}
